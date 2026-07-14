@@ -1,6 +1,6 @@
 namespace veterinaria_backend.Domain.Models;
 
-public class PrescriptionItem
+public class PrescriptionItemDomain
 {
     public Guid Id { get; set; }
 
@@ -14,7 +14,7 @@ public class PrescriptionItem
 
     public string? Duration { get; set; }
 
-    public Medicine Medicine { get; set; } = null!;
+    public MedicineDomain Medicine { get; set; } = null!;
 
-    public Prescription Prescription { get; set; } = null!;
+    public PrescriptionDomain Prescription { get; set; } = null!;
 }

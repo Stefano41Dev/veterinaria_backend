@@ -1,6 +1,6 @@
 namespace veterinaria_backend.Domain.Models;
 
-public class MedicalRecord
+public class MedicalRecordDomain
 {
     public Guid Id { get; set; }
 
@@ -16,7 +16,7 @@ public class MedicalRecord
 
     public DateTime ConsultationDate { get; set; }
 
-    public Appointment Appointment { get; set; } = null!;
+    public AppointmentDomain Appointment { get; set; } = null!;
 
-    public ICollection<Prescription> Prescriptions { get; set; } = new List<Prescription>();
+    public ICollection<PrescriptionDomain> Prescriptions { get; set; } = new List<PrescriptionDomain>();
 }

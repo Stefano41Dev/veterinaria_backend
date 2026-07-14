@@ -1,6 +1,6 @@
 namespace veterinaria_backend.Domain.Models;
 
-public class Vaccine
+public class VaccineDomain
 {
     public int Id { get; set; }
 
@@ -10,5 +10,5 @@ public class Vaccine
 
     public string? Description { get; set; }
 
-    public ICollection<Vaccination> Vaccinations { get; set; } = new List<Vaccination>();
+    public ICollection<VaccinationDomain> Vaccinations { get; set; } = new List<VaccinationDomain>();
 }

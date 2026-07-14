@@ -1,6 +1,6 @@
 namespace veterinaria_backend.Domain.Models;
 
-public class User
+public class UserDomain
 {
     public Guid Id { get; set; }
 
@@ -22,7 +22,7 @@ public class User
 
     public DateTime? UpdatedAt { get; set; }
 
-    public Role Role { get; set; } = null!;
+    public RoleDomain Role { get; set; } = null!;
 
-    public ICollection<Veterinarian> Veterinarians { get; set; } = new List<Veterinarian>();
+    public ICollection<VeterinarianDomain> Veterinarians { get; set; } = new List<VeterinarianDomain>();
 }

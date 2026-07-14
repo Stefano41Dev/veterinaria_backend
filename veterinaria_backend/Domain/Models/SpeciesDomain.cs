@@ -1,10 +1,10 @@
 namespace veterinaria_backend.Domain.Models;
 
-public class Role
+public class SpeciesDomain
 {
     public int Id { get; set; }
 
     public string Name { get; set; } = null!;
 
-    public ICollection<User> Users { get; set; } = new List<User>();
+    public ICollection<BreedDomain> Breeds { get; set; } = new List<BreedDomain>();
 }

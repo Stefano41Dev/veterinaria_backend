@@ -1,6 +1,6 @@
 namespace veterinaria_backend.Domain.Models;
 
-public class Vaccination
+public class VaccinationDomain
 {
     public Guid Id { get; set; }
 
@@ -18,9 +18,9 @@ public class Vaccination
 
     public string? Notes { get; set; }
 
-    public Pet Pet { get; set; } = null!;
+    public PetDomain Pet { get; set; } = null!;
 
-    public Vaccine Vaccine { get; set; } = null!;
+    public VaccineDomain Vaccine { get; set; } = null!;
 
-    public Veterinarian Veterinarian { get; set; } = null!;
+    public VeterinarianDomain Veterinarian { get; set; } = null!;
 }

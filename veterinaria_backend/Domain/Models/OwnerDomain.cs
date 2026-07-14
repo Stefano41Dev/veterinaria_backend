@@ -1,6 +1,6 @@
 namespace veterinaria_backend.Domain.Models;
 
-public class Owner
+public class OwnerDomain
 {
     public Guid Id { get; set; }
 
@@ -18,5 +18,5 @@ public class Owner
 
     public DateTime? CreatedAt { get; set; }
 
-    public ICollection<Pet> Pets { get; set; } = new List<Pet>();
+    public ICollection<PetDomain> Pets { get; set; } = new List<PetDomain>();
 }

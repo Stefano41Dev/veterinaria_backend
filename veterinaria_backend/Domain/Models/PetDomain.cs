@@ -1,6 +1,6 @@
 namespace veterinaria_backend.Domain.Models;
 
-public class Pet
+public class PetDomain
 {
     public Guid Id { get; set; }
 
@@ -24,11 +24,11 @@ public class Pet
 
     public bool? IsActive { get; set; }
 
-    public ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
+    public ICollection<AppointmentDomain> Appointments { get; set; } = new List<AppointmentDomain>();
 
-    public Breed Breed { get; set; } = null!;
+    public BreedDomain Breed { get; set; } = null!;
 
-    public Owner Owner { get; set; } = null!;
+    public OwnerDomain Owner { get; set; } = null!;
 
-    public ICollection<Vaccination> Vaccinations { get; set; } = new List<Vaccination>();
+    public ICollection<VaccinationDomain> Vaccinations { get; set; } = new List<VaccinationDomain>();
 }
