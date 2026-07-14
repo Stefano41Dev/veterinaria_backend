@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+namespace veterinaria_backend.Domain.Models;
 
-namespace veterinaria_backend.Models;
-
-public partial class MedicalRecord
+public class MedicalRecord
 {
     public Guid Id { get; set; }
 
@@ -19,7 +16,7 @@ public partial class MedicalRecord
 
     public DateTime ConsultationDate { get; set; }
 
-    public virtual Appointment Appointment { get; set; } = null!;
+    public Appointment Appointment { get; set; } = null!;
 
-    public virtual ICollection<Prescription> Prescriptions { get; set; } = new List<Prescription>();
+    public ICollection<Prescription> Prescriptions { get; set; } = new List<Prescription>();
 }

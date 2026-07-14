@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+namespace veterinaria_backend.Domain.Models;
 
-namespace veterinaria_backend.Models;
-
-public partial class Vaccination
+public class Vaccination
 {
     public Guid Id { get; set; }
 
@@ -21,9 +18,9 @@ public partial class Vaccination
 
     public string? Notes { get; set; }
 
-    public virtual Pet Pet { get; set; } = null!;
+    public Pet Pet { get; set; } = null!;
 
-    public virtual Vaccine Vaccine { get; set; } = null!;
+    public Vaccine Vaccine { get; set; } = null!;
 
-    public virtual Veterinarian Veterinarian { get; set; } = null!;
+    public Veterinarian Veterinarian { get; set; } = null!;
 }

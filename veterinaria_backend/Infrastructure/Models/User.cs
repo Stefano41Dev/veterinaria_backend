@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace veterinaria_backend.Models;
+namespace veterinaria_backend.Infrastructure.Models;
 
 public partial class User
 {

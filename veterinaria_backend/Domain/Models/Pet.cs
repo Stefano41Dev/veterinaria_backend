@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+namespace veterinaria_backend.Domain.Models;
 
-namespace veterinaria_backend.Models;
-
-public partial class Pet
+public class Pet
 {
     public Guid Id { get; set; }
 
@@ -27,11 +24,11 @@ public partial class Pet
 
     public bool? IsActive { get; set; }
 
-    public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
+    public ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
 
-    public virtual Breed Breed { get; set; } = null!;
+    public Breed Breed { get; set; } = null!;
 
-    public virtual Owner Owner { get; set; } = null!;
+    public Owner Owner { get; set; } = null!;
 
-    public virtual ICollection<Vaccination> Vaccinations { get; set; } = new List<Vaccination>();
+    public ICollection<Vaccination> Vaccinations { get; set; } = new List<Vaccination>();
 }
